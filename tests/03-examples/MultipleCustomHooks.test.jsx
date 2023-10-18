@@ -1,11 +1,11 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import { MultipleCustomHooks } from "../../../src/03-examples/MultipleCustomHooks";
-import { useFetch } from "../../../src/hooks/useFetch";
-import { useCounter } from "../../../src/hooks/useCounter";
+import { MultipleCustomHooks } from "../../src/03-examples/MultipleCustomHooks";
+import { useFetch } from "../../src/hooks/useFetch";
+import { useCounter } from "../../src/hooks/useCounter";
 
 // HACER MOCK DE ESA LIBRERIA PARA UTILIZARLA
-jest.mock('../../../src/hooks/useCounter');
-jest.mock('../../../src/hooks/useFetch');
+jest.mock('../../src/hooks/useCounter');
+jest.mock('../../src/hooks/useFetch');
 
 describe('Pruebas en <MultipleCustomHooks/>',()=>{
 
