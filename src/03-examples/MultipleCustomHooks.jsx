@@ -7,14 +7,14 @@ export const MultipleCustomHooks = () => {
     const {counter, increment} = useCounter(1);
     const {data, isLoading, hasError} = useFetch('https://rickandmortyapi.com/api/character/'+counter);
 
-    console.log(counter);
+    //console.log(counter);
 
     //console.log({data});
 
     // CONDICIONAL PARA LA DESESTRUCTURACION (DOBLE NEGACION)
     //const {name, status} = !!data && data[0];
 
-    console.log(data);
+    //console.log(data);
 
     // LOS HOOKS NO DEBEN SER RENDERIZADOS DE MANERA CONDICIONAL
     /*
